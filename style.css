@@ -130,3 +130,34 @@
     margin-top: 20px;
     position: relative;
   }
+  footer {
+    height: 150px;
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+  }
+  
+  .footer ul li {
+    display: inline-block;
+    margin: 5px;
+  }
+  
+  .toggleDesignLogo {
+    display: none;
+    text-align: center;
+    font-family: Signika Negative, sans-serif;
+  }
+  
+  .toggleDevLogo {
+    display: none;
+    text-align: center;
+    font-family: Signika Negative, sans-serif;
+  }
+  
+  .toggleProductLogo {
+    display: none;
+    text-align: center;
+    font-family: Signika Negative, sans-serif;
+  }
