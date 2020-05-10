@@ -1,3 +1,22 @@
-.jumbotron jumbotron-fluid{
+.row1{
     background-image: url(/assets/backgrounds/h_img.jpg);
 }
+.row1 {
+    width: 100%;
+    height: 600px;
+    padding: 0px 20px;
+    margin-right: -15px;
+    margin-left: -15px;
+    text-align: center;
+  }
+  
+  .row1 h1 {
+    position: relative;
+    padding-top: 10%;
+    font-weight: bold;
+  }
+  
+  .paragraph1 {
+    font-weight: bold;
+    font-family: Signika Negative, sans-serif;
+    font-size: 35px;
