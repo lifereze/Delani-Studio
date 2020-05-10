@@ -1,0 +1,32 @@
+.head{
+    background-image: url(assets/backgrounds/h_img.jpg);
+    background-size: cover;
+    height: 100vh;
+    padding: 20%;
+    margin: 0%;
+}
+.centered{
+    margin-top: 50px;
+    color: white;
+}
+.mouse img{
+    margin-top: 50px;
+}
+.About {
+    max-width: 1140px;
+}
+.services{
+    background-image: url(assets/backgrounds/s_image.jpg);
+    height: 60vh;
+
+}
+.text {
+ font-size: 20px;
+ margin-left: 280px;
+}
+.content{
+    color: white;
+    margin-left: 280px;
+    font-size: 20px;
+    margin: 2% 20% 5% 20%;
+}
