@@ -184,3 +184,7 @@
     font-weight: bold;
     font-family: Signika Negative, sans-serif;
   }
+.submit {
+    float: left;
+    border-radius: 2px;
+  }
