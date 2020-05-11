@@ -9,6 +9,9 @@
     margin-left: -15px;
     text-align: center;
   }
+  .row2{
+      text-align: center;
+  }
   
   .row1 h1 {
     position: relative;
@@ -28,10 +31,11 @@
     margin-left: -15px;
     text-align: center;
     background-size: cover;
+    color: white;
   }
   
   .row3 h1 {
-    padding-top: 10%;
+    padding-top: 8%;
   }
   
   .row4 {
@@ -71,6 +75,15 @@
     padding-bottom: 40px;
   }
   .row7 {
+    width: 100%;
+    height: 400px;
+    margin-right: -15px;
+    margin-left: -15px;
+    padding: 0px 20px;
+    background-size: cover;
+    text-align: center;
+  }
+  .row{
     width: 100%;
     height: 400px;
     margin-right: -15px;
@@ -196,4 +209,7 @@
     content: "";
     clear: both;
     display: table;
+  }
+  form{
+      width: 100%;
   }
