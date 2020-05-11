@@ -1,215 +1,262 @@
-.row1{
-    background-image: url(/assets/backgrounds/h_img.jpg);
-}
-.row1 {
-    width: 100%;
-    height: 600px;
-    padding: 0px 20px;
-    margin-right: -15px;
-    margin-left: -15px;
-    text-align: center;
-  }
-  .row2{
-      text-align: center;
+body {
+    font-family: "Play", sans-serif;
   }
   
-  .row1 h1 {
-    position: relative;
-    padding-top: 10%;
-    font-weight: bold;
-  }
-  
-  .paragraph1 {
-    font-weight: bold;
-    font-size: 35px;
-  }
-.row3 {
-    width: 100%;
-    height: 300px;
-    padding: 0px 20px;
-    margin-right: -15px;
-    margin-left: -15px;
-    text-align: center;
+  /*styling of the home-container div element*/
+  #home-container {
+    background-image: url(./assets/backgrounds/h_img.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-position: center center;
     background-size: cover;
+    text-align: center;
     color: white;
   }
   
-  .row3 h1 {
-    padding-top: 8%;
+  #logo {
+    padding-top: 10rem;
   }
   
-  .row4 {
-    width: 100%;
-    height: 300px;
-    margin-right: -20px;
-    margin-left: -20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 0px;
-  }
-  .row5 {
-    width: 100%;
-    height: auto;
-    margin-right: -20px;
-    margin-left: -20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin-bottom: 30px;
+  #welcome-title {
+    padding-top: 5rem;
   }
   
-  .row6 {
-    width: 100%;
-    height: auto;
-    margin-right: -20px;
-    margin-left: -20px;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    padding: 20px;
-    padding-bottom: 40px;
+  #mouse-click {
+    padding-top: 6rem;
+    padding-bottom: 2rem;
   }
-  .row7 {
-    width: 100%;
-    height: 400px;
-    margin-right: -15px;
-    margin-left: -15px;
-    padding: 0px 20px;
+  
+  /*styling the about-us-container div element*/
+  #about-us-container {
+    text-align: center;
+    background-color: white;
+  }
+  
+  #about-us-header {
+    padding-top: 2rem;
+  }
+  
+  #about-us-description {
+    padding-bottom: 2rem;
+    line-height: 3rem;
+  }
+  
+  /*styling the service-container div element*/
+  #service-container {
+    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
-  }
-  .row{
-    width: 100%;
-    height: 400px;
-    margin-right: -15px;
-    margin-left: -15px;
-    padding: 0px 20px;
-    background-size: cover;
-    text-align: center;
-  }
-  
-  .headerMain {
-    position: relative;
     color: white;
   }
   
-  .whatWeDo {
-    margin-top: 20px;
-    margin-right: -25px;
-    margin-left: -25px;
-    position: relative;
+  #service-header {
+    padding-top: 6rem;
   }
   
-  .whatWeDo h1 {
-    margin: 10px;
+  #service-description {
+    padding-bottom: 6rem;
+    line-height: 3rem;
+  }
+  
+  /*styling the what-we-do div element within the portfolio-container div element*/
+  #whatwedo-header {
     text-align: center;
+    padding-top: 2rem;
   }
   
-  .whatWeDo img {
-    margin-top: 40px;
-    height: 100px;
-    width: auto;
-    display: block;
-    margin: auto;
-    padding-top: 10%;
-  }
-  .portfolio {
-    position: relative;
-    width: 60%;
-    margin: auto;
+  #what-we-do {
+    display: flex;
+    flex-direction: row;
+    justify-items: stretch;
+    justify-content: space-between;
+    padding-top: 2rem;
   }
   
-  .portfolio h1 {
-    margin: 10px;
-    text-align: center;
-    font-weight: bold;
+  .clickable-images {
+    cursor: pointer;
   }
   
-  .portfolio img {
-    height: auto;
-    width: auto;
-    
-  }
-  
-  .contactUs {
-    margin-top: 20px;
-    position: relative;
-  }
-  footer {
-    height: 150px;
-    margin-top: 20px;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    position: relative;
-  }
-  
-  .footer ul li {
-    display: inline-block;
-    margin: 5px;
-  }
-  
-  .toggleDesignLogo {
+  .hidden-description {
     display: none;
+  }
+  
+  #design-icon {
     text-align: center;
   }
   
-  .toggleDevLogo {
-    display: none;
+  #development-icon {
     text-align: center;
   }
   
-  .toggleProductLogo {
-    display: none;
-    text-align: center;
-  }
-  #inlineDesign {
+  #product-icon {
     text-align: center;
   }
   
-  #inlineDev {
+  #design-icon-description {
     text-align: center;
-  }
-  
-  #inlineProduct {
-    text-align: center;
-  }
-  
-  #inline {
-    text-align: center;
-  }
-  
-  #headerImg2 {
-    padding-top: 15%;
-  }
-  h1 {
-    font-weight: bold;
-  }
-.submit {
-    float: left;
-    border-radius: 2px;
-  }
-  #headerImg1{
-      align-items: center;
-  }
-  /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    float: left;
     width: 25%;
-    padding: 10px;
   }
   
-  /* Clear floats after image containers */
-  .row::after {
-    content: "";
-    clear: both;
-    display: table;
+  #development-icon-description {
+    text-align: center;
+    width: 25%;
   }
-  form{
-      width: 100%;
+  
+  #product-icon-description {
+    text-align: center;
+    width: 25%;
+  }
+  
+  /*styling the actual-portfolio-container div element within the portfolio-container div element*/
+  #portfolio-header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  .image-size {
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 2rem;
+  }
+  
+  #bottom-row-projects {
+    padding-bottom: 2rem;
+  }
+  
+  #project-one-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-two-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-three-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-four-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-five-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-six-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-seven-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  #project-eight-title {
+    text-align: center;
+    font-weight: bold;
+    margin: -50% 25%;
+    background-color: white;
+    border: 1px, solid, black;
+  }
+  
+  /*styling the contact-us-container div element*/
+  #contact-us-container {
+    background-image: url(../assets/backgrounds/c_image.jpg);
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+  }
+  
+  #contact-form {
+    width: 65%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  #user-form-info {
+    padding-bottom: 1rem;
+  }
+  
+  #user-comment-text {
+    padding-bottom: 2rem;
+  }
+  
+  #contact-header {
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  
+  ::placeholder {
+    color: white;
+  }
+  
+  #user-name,
+  #user-email,
+  #user-comments {
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+    padding: 7px;
+  }
+  
+  #button-to-submit {
+    margin-left: 24.5rem;
+    margin-bottom: 2rem;
+    background: transparent;
+    border: 1px solid white;
+    color: white;
+  }
+  
+  /*styling the footer-container div element*/
+  #footer-container {
+    text-align: center;
+  }
+  
+  #social-media-icons {
+    padding-top: 4rem;
+  }
+  
+  a {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  
+  #delani-footer {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
   }
