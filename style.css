@@ -4,7 +4,7 @@ body {
   
   /*styling of the home-container div element*/
   #home-container {
-    background-image: url(./assets/backgrounds/h_img.jpg);
+    background-image: url(assets/backgrounds/h_img.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-position: center center;
@@ -43,7 +43,7 @@ body {
   
   /*styling the service-container div element*/
   #service-container {
-    background-image: url(../assets/backgrounds/s_image.jpg);
+    background-image: url(assets/backgrounds/s_image.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
@@ -190,9 +190,9 @@ body {
     border: 1px, solid, black;
   }
   
-  /*styling the contact-us-container div element*/
+
   #contact-us-container {
-    background-image: url(../assets/backgrounds/c_image.jpg);
+    background-image: url(assets/backgrounds/c_image.jpg);
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
@@ -201,8 +201,8 @@ body {
   
   #contact-form {
     width: 65%;
-    padding-right: 15px;
-    padding-left: 15px;
+    padding-right: 18px;
+    padding-left: 18px;
     margin-right: auto;
     margin-left: auto;
   }
@@ -241,8 +241,7 @@ body {
     border: 1px solid white;
     color: white;
   }
-  
-  /*styling the footer-container div element*/
+
   #footer-container {
     text-align: center;
   }

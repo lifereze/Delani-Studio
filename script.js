@@ -1,10 +1,6 @@
  
 $(document).ready(function() {
-    //jquery front-end code
-  
-    //code to control the display of text in-place of the what we do icons
-  
-    //design space
+
     $("#design-icon").click(function() {
       $("#design-icon").hide();
       $("#design-icon-description").toggle();
@@ -15,7 +11,7 @@ $(document).ready(function() {
       $("#design-icon").toggle();
       $("#design-icon").show();
     });
-    //development-space
+
     $("#development-icon").click(function() {
       $("#development-icon").hide();
       $("#development-icon-description").toggle();
@@ -26,7 +22,7 @@ $(document).ready(function() {
       $("#development-icon").toggle();
       $("#development-icon").show();
     });
-    //product management stage
+
     $("#product-icon").click(function() {
       $("#product-icon").hide();
       $("#product-icon-description").toggle();
@@ -38,12 +34,10 @@ $(document).ready(function() {
       $("#product-icon").show();
     });
   
-    //functions to control the display of the project headers on the project images on mouse hoover, in the portfolio section
-  
-    //project one
+
     $("#project-one").hover(
       function() {
-        $("#project-one").animate({ opacity: "0.35" });
+        $("#project-one").animate({ opacity: "0.25" });
         $("#project-one-title").toggle("#project-one");
       },
       function() {
@@ -51,10 +45,10 @@ $(document).ready(function() {
         $("#project-one-title").toggle("#project-one");
       }
     );
-    //project two
+
     $("#project-two").hover(
       function() {
-        $("#project-two").animate({ opacity: "0.35" });
+        $("#project-two").animate({ opacity: "0.25" });
         $("#project-two-title").toggle("#project-two");
       },
       function() {
@@ -62,10 +56,10 @@ $(document).ready(function() {
         $("#project-two-title").toggle("#project-two");
       }
     );
-    //project three
+
     $("#project-three").hover(
       function() {
-        $("#project-three").animate({ opacity: "0.35" });
+        $("#project-three").animate({ opacity: "0.25" });
         $("#project-three-title").toggle("#project-three");
       },
       function() {
@@ -73,10 +67,10 @@ $(document).ready(function() {
         $("#project-three-title").toggle("#project-three");
       }
     );
-    //project four
+
     $("#project-four").hover(
       function() {
-        $("#project-four").animate({ opacity: "0.35" });
+        $("#project-four").animate({ opacity: "0.25" });
         $("#project-four-title").toggle("#project-four");
       },
       function() {
@@ -84,10 +78,10 @@ $(document).ready(function() {
         $("#project-four-title").toggle("#project-four");
       }
     );
-    //project five
+
     $("#project-five").hover(
       function() {
-        $("#project-five").animate({ opacity: "0.35" });
+        $("#project-five").animate({ opacity: "0.25" });
         $("#project-five-title").toggle("#project-five");
       },
       function() {
@@ -95,10 +89,10 @@ $(document).ready(function() {
         $("#project-five-title").toggle("#project-five");
       }
     );
-    //project six
+
     $("#project-six").hover(
       function() {
-        $("#project-six").animate({ opacity: "0.35" });
+        $("#project-six").animate({ opacity: "0.25" });
         $("#project-six-title").toggle("#project-six");
       },
       function() {
@@ -106,10 +100,10 @@ $(document).ready(function() {
         $("#project-six-title").toggle("#project-six");
       }
     );
-    //project seven
+
     $("#project-seven").hover(
       function() {
-        $("#project-seven").animate({ opacity: "0.35" });
+        $("#project-seven").animate({ opacity: "0.25" });
         $("#project-seven-title").toggle("#project-seven");
       },
       function() {
@@ -117,10 +111,10 @@ $(document).ready(function() {
         $("#project-seven-title").toggle("#project-seven");
       }
     );
-    //project eight
+
     $("#project-eight").hover(
       function() {
-        $("#project-eight").animate({ opacity: "0.35" });
+        $("#project-eight").animate({ opacity: "0.25" });
         $("#project-eight-title").toggle("#project-eight");
       },
       function() {
@@ -129,11 +123,7 @@ $(document).ready(function() {
       }
     );
   
-    //jquery back-end code
-  
-    //code to control user details input and submission in the form section
-  
-    //controls submission and reset of the form-submission form
+
     $("#form-submission").submit(function(event) {
       var nameOfUser = $("input#user-name").val();
       var emailOfUser = $("input#user-email").val();
@@ -152,5 +142,33 @@ $(document).ready(function() {
       }
   
       event.preventDefault();
+    });
+  });
+  $(document).ready(function() {
+    $('#subscribeForm').bind('.submit', function() {
+      event.preventDefault();
+      var name = $('#nameInput').val;
+      var email = $('#exampleFormControlInput1').val;
+      var message = $('#messageInput').val;
+      var url = "https://us20.api.mailchimp.com/2.0/lists/subscribe.json?" + "apikey=df458b36b6"
+      "id=98190a3419c9eb27281a8f3d59840865-us20 " +
+      "&email[email]=" + email +
+        "&merge_vars[NAME]=" + name +
+        "&merge_vars[NAME]=" + message +
+        "&send_welcome=false";
+  
+      $.ajax({
+        type: "POST",
+        url: url,
+        dataType: 'json',
+        success: function(data) {
+          $('#subscribe-form').html("Thank you!");
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+          alert(errorThrown);
+        }
+      });
+  
+  
     });
   });
